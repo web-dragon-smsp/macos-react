@@ -47,6 +47,7 @@ const finder = createAppConfig({
     resizable: true,
 
     dockBreaksBefore: false,
+    expandable: true
 });
 
 const safari = createAppConfig({
@@ -88,7 +89,18 @@ const mail = createAppConfig({
 const aboutMac = createAppConfig({
     title: "About This Mac",
     resizable: false,
+    height: 300,
+    width: 500,
+    dockBreaksBefore: true,
 })
+
+const viewSource = createAppConfig({
+    title: `View Source`,
+    resizable: true,
+
+    shouldOpenWindow: false,
+    externalAction: () => window.open('https://github.com/web-dragon-smsp/macos-react', '_blank'),
+});
 
 
 export const appsConfig = {
@@ -101,6 +113,7 @@ export const appsConfig = {
     calculator,
     calendar,
     tv,
-    wallpapers,
+    'about-mac': aboutMac,
     vscode,
+    'view-source': viewSource,
 };

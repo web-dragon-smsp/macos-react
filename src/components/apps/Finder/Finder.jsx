@@ -20,10 +20,15 @@ function Finder(props) {
 
       backgroun-color: ${isDark => isDark ? "#251E1E" : "#E1DFDF"};
 
-      //display: grid;
-      //grid-template-rows: auto auto 1fr;
-
+      ////display: grid;
+      ////grid-template-rows: auto auto 1fr;
+      //
       font-family: var(--app-font-family) !important;
+      background-color: #252526;
+      padding: 1px;
+
+      border-radius: inherit;
+
     `
     const SideBar = styled.div`
       padding-top: 45px;

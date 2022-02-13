@@ -18,7 +18,7 @@ export const openAppsStore = atom({
     tv: false,
     'purus-twitter': false,
     'view-source': false,
-    'about-mac': false,
+    'about-mac': true,
 });
 
 /** Which app is currently focused */
